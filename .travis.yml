@@ -1,16 +1,17 @@
 language: python
 python:
-  - "2.7"
-# install depedencies
-install: "pip install -r requirements.txt --use-mirrors"
+- '2.7'
+install: pip install -r requirements.txt --use-mirrors
 branches:
   only:
-  - "master"
+  - master
 script:
-- "make html"
+- make html
 notifications:
   email:
     on_success: always
     on_failure: always
-after_success: "bash deploy.sh"
-
+after_success: bash deploy.sh
+env:
+  global:
+    secure: GIDOL0TbWgaa2Rx8wn+oOEfqnu1Oso1y1/Ho1JzY0YgbKZk9hWyXIQTFP+OXfH5HAKqHcfzWiGDoNr7QDVbxY62osEXAJ8lLJbOywf4nbFmKjbGGWsT7zBKqdfyuGS6BkmUK8tCmP+RnJRKSXCqAFWBb8Hk8fpbdMVgd4+WtgUQ=
