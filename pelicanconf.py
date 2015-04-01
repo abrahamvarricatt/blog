@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Abraham V.'
 SITENAME = u'Great Works'
-SITEURL = ''
+SITEURL = 'http://abrahamvarricatt.github.io'
 
 PATH = 'content'
 
@@ -33,3 +33,6 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = "./themes/pelican-bootstrap3"
+
